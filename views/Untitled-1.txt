@@ -1,0 +1,2 @@
+
++ " " + customerdetails[i].lname + " "+ customerdetails[i].email+ " " + customerdetails[i].gender+ " " + customerdetails[i].description + " "+ customerdetails[i].cycle + " "+ customerdetails[i].myfile%></span>

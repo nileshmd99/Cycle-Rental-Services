@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/uploadProfilePicture" method = "POST" enctype = “multipart/form-data”>
+  <div class="container">
+    <h1>Customer details</h1>
+    <p>Please fill in this form to use our Cycle-rent services.</p>
+    <hr>
+    <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    Address : <br />
+         <textarea rows = "5" cols = "50" name = "description">
+         </textarea><br>
+         <label for="phone">Enter a phone number:</label><br><br>
+         <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}" required><br><br>
+         <input type="radio" id="MTB 7 days 1000" name="cycle" value="MTB 7 days 1000">
+         <label for="MTB 7 days 1000">MTB 7 days 1000</label><br>
+         <input type="radio" id="Hybrid 7 days 2000" name="cycle" value="Hybrid 7 days 2000">
+         <label for="Hybrid 7 days 2000">Hybrid 7 days 2000</label><br>
+         <input type="radio" id="Road Bike 7 days 5000" name="cycle" value="Road Bike 7 days 5000">
+         <label for="Road Bike 7 days 5000">Road Bike 7 days 5000</label><br><br>
+    <label for="myfile">Id proof</label><br>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    <input type="submit" value="Submit">
+  </div>
+  
+  
+</form>
+
+</body>
+</html>

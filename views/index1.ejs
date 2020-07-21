@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Cycle rental services</h1>
+
+<ul class="customerdetails">
+  <!-- Loop through customerdetails -->
+  <% for(var i = 0; i < customerdetails.length; i++) {%>
+    <li class="users">
+      <!-- Output name from the iterated quote object -->
+      <span><%= customerdetails[i].fname ></span>
+    </li>
+  <% } %>
+</ul>
+</body>
+</html>
