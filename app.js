@@ -97,7 +97,7 @@ app.post('/usertype', (req, res) => {
         service: 'gmail',
         auth: {
                user: 'cyclerental242@gmail.com',
-               pass: 'cyclerental1234'
+               pass: ''//intentionally hiding password
            },
         tls: {
             rejectUnauthorized: false
